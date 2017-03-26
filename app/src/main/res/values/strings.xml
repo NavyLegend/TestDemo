@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TestDemo</string>
+    <string-array name="data">
+        <item>我是第1行数据</item>
+        <item>我是第2行数据</item>
+        <item>我是第3行数据</item>
+        <item>我是第4行数据</item>
+        <item>我是第5行数据</item>
+        <item>我是第6行数据</item>
+        <item>我是第7行数据</item>
+        <item>我是第8行数据</item>
+        <item>我是第9行数据</item>
+        <item>我是第10行数据</item>
+        <item>我是第11行数据</item>
+        <item>我是第12行数据</item>
+        <item>我是第13行数据</item>
+        <item>我是第14行数据</item>
+        <item>我是第15行数据</item>
+        <item>我是第16行数据</item>
+
+    </string-array>
+    <array name="magic_effect">
+        <item>RotateDown</item>
+        <item>RotateUp</item>
+        <item>RotateY</item>
+        <item>Standard</item>
+        <item>Alpha</item>
+        <item>ScaleIn</item>
+        <item>RotateDown and Alpha</item>
+        <item>RotateDown and Alpha And ScaleIn</item>
+        <item>ScaleInAlphaTransformer</item>
+    </array>
+</resources>

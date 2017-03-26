@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bitmap_shader"
+        android:title="BitmapShader" />
+    <item
+        android:id="@+id/compose_shader"
+        android:title="ComposeShader"></item>
+    <item android:id="@+id/linear_gradient"
+        android:title="LinearGradient"></item>
+    <item
+        android:id="@+id/radial_gradient"
+        android:title="RadialGradient"></item>
+
+</menu>
