@@ -53,7 +53,6 @@ public class MagicViewPager extends AppCompatActivity {
         String title = item.getTitle().toString();
         mViewPager.setAdapter(new MyPagerAdapter());
 
-
         if ("RotateDown".equals(title))
         {
             mViewPager.setPageTransformer(true, new RotateDownPageTransformer());
