@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * 首页轮播图
- * Created by mdw on 2016/4/20.
+ *
  */
 public class HomeShufAdapter extends PagerAdapter implements ViewPager.OnPageChangeListener {
 

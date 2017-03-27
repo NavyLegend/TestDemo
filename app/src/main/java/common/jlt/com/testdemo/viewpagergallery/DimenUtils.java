@@ -4,9 +4,7 @@ import android.util.TypedValue;
 
 import common.jlt.com.testdemo.rxjava.MyApplication;
 
-/**
- * Created by mdw on 2016/4/20.
- */
+
 public class DimenUtils {
 
 
