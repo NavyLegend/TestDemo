@@ -42,7 +42,8 @@
         <activity android:name=".recyclerviewgallery.RecyclerViewGallery" />
         <activity android:name=".gradienttitlebar.GradientTitleBarActivity" />
         <activity android:name=".viewpagergallery.ViewPagerGallery" />
-        <activity android:name=".viewpagergallery.MagicViewPager"></activity>
+        <activity android:name=".viewpagergallery.MagicViewPager" />
+        <activity android:name=".customviewpager.CustomViewPager"></activity>
     </application>
 
 </manifest>

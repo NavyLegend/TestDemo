@@ -73,6 +73,12 @@
             android:layout_height="wrap_content"
             android:text="viewpagerGallery2"
             />
+        <Button
+            android:id="@+id/customeViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义view来实现ViewPager效果"
+            />
 
     </LinearLayout>
 

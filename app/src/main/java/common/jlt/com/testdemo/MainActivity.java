@@ -6,14 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import cn.jpush.android.api.JPushInterface;
+import common.jlt.com.testdemo.customviewpager.CustomViewPager;
 import common.jlt.com.testdemo.gradienttitlebar.GradientTitleBarActivity;
 import common.jlt.com.testdemo.greendao.GreenDaoActivity;
 import common.jlt.com.testdemo.okhttp.OkHttpActivity;
 import common.jlt.com.testdemo.recyclerviewgallery.RecyclerViewGallery;
 import common.jlt.com.testdemo.rxjava.RxJavaActivity;
+import common.jlt.com.testdemo.strategy.Strategy;
 import common.jlt.com.testdemo.viewpagergallery.MagicViewPager;
 import common.jlt.com.testdemo.viewpagergallery.ViewPagerGallery;
-import common.jlt.com.testdemo.strategy.Strategy;
 
 /**
  * 首页
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.gradientTitleBar).setOnClickListener(this);
         findViewById(R.id.viewpagerGallery).setOnClickListener(this);
         findViewById(R.id.viewpagerGallery2).setOnClickListener(this);
+        findViewById(R.id.customeViewPager).setOnClickListener(this);
 
         /**
          * 初始化极光推送
@@ -82,7 +84,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.viewpagerGallery2:
                 startActivity(new Intent(this, MagicViewPager.class));
                 break;
-
+            //自定义View来实现ViewPager效果
+            case R.id.customeViewPager:
+                startActivity(new Intent(this, CustomViewPager.class));
+                break;
+            default:
+                break;
         }
     }
 }
