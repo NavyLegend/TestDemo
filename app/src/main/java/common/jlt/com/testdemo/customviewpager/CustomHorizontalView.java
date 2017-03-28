@@ -12,7 +12,7 @@ import android.widget.Scroller;
  * Created by Administrator on 2017/3/28.
  */
 
-public class CustomView extends ViewGroup{
+public class CustomHorizontalView extends ViewGroup{
     private int lastX;
     private int lastY;
     private int currentIndex = 0; //当前子元素
@@ -21,17 +21,17 @@ public class CustomView extends ViewGroup{
     private VelocityTracker tracker;    //增加速度检测,如果速度比较快的话,就算没有滑动超过一半的屏幕也可以
     private int lastInterceptX=0;
     private int lastInterceptY=0;
-    public CustomView(Context context) {
+    public CustomHorizontalView(Context context) {
         super(context);
         init();
     }
 
-    public CustomView(Context context, AttributeSet attrs) {
+    public CustomHorizontalView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public CustomView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CustomHorizontalView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }

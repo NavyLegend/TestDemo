@@ -43,7 +43,9 @@
         <activity android:name=".gradienttitlebar.GradientTitleBarActivity" />
         <activity android:name=".viewpagergallery.ViewPagerGallery" />
         <activity android:name=".viewpagergallery.MagicViewPager" />
-        <activity android:name=".customviewpager.CustomViewPager"></activity>
+        <activity android:name=".customviewpager.CustomViewPager" />
+        <activity android:name=".customviewpager.CustomHorizontalActivity" />
+        <activity android:name=".customviewpager.CustomVerticalActivity"></activity>
     </application>
 
 </manifest>
