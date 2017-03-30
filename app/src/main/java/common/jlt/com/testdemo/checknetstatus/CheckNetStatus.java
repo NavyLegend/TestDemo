@@ -1,4 +1,4 @@
-package common.jlt.com.testdemo;
+package common.jlt.com.testdemo.checknetstatus;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import common.jlt.com.testdemo.R;
 
 public class CheckNetStatus extends AppCompatActivity {
     private IntentFilter intentFilter;

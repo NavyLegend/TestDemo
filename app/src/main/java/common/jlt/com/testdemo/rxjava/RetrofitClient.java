@@ -51,6 +51,18 @@ public class RetrofitClient {
         } else {
             interceptor.setLevel(HttpLoggingInterceptor.Level.BASIC);
         }
+        /**
+         * 添加请求头
+         */
+        Interceptor headerInterceptor = new Interceptor() {
+            @Override
+            public Response intercept(Chain chain) throws IOException {
+                Request.Builder builder1 = chain.request().newBuilder();
+                builder1.addHeader("token","123");
+                return chain.proceed(builder1.build());
+            }
+        };
+
 
         /**
          * 设置缓存
@@ -93,6 +105,7 @@ public class RetrofitClient {
         };
         builder.addInterceptor(interceptor)
                 .addInterceptor(cacheInterceptor)
+//                .addInterceptor(headerInterceptor)
                 .cache(cache)
                 .connectTimeout(20, TimeUnit.SECONDS)
                 .readTimeout(20,TimeUnit.SECONDS)

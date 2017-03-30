@@ -4,15 +4,15 @@
     android:id="@+id/activity_check_net_status"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="common.jlt.com.testdemo.CheckNetStatus">
+    tools:context="common.jlt.com.testdemo.checknetstatus.CheckNetStatus">
     <TextView
         android:id="@+id/net_hint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="网络不可用了！"
-        android:gravity="center_horizontal"
         android:background="@android:color/darker_gray"
+        android:gravity="center_horizontal"
         android:padding="5dp"
+        android:text="网络不可用了！"
         android:visibility="gone"
         />
 

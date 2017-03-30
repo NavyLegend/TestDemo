@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import cn.jpush.android.api.JPushInterface;
+import common.jlt.com.testdemo.checknetstatus.CheckNetStatus;
 import common.jlt.com.testdemo.customviewpager.CustomViewPager;
 import common.jlt.com.testdemo.gradienttitlebar.GradientTitleBarActivity;
 import common.jlt.com.testdemo.greendao.GreenDaoActivity;
