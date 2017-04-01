@@ -47,7 +47,13 @@
             android:id="@+id/RxJava"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RxJava+Retrofit+OkHttp的简单Demo及缓存设置"
+            android:text="RxJava+Retrofit+OkHttp的Demo及缓存设置"
+            />
+        <Button
+            android:id="@+id/RxJava2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RxJava+Retrofit 的封装"
             />
         <Button
             android:id="@+id/RecyclerViewGallery"

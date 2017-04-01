@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.viewpagerGallery).setOnClickListener(this);
         findViewById(R.id.viewpagerGallery2).setOnClickListener(this);
         findViewById(R.id.customeViewPager).setOnClickListener(this);
+        findViewById(R.id.RxJava2).setOnClickListener(this);
 
         /**
          * 初始化极光推送
@@ -68,6 +69,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //RxJava + Retriofit + OkHttp 简单Demo
             case R.id.RxJava:
                 startActivity(new Intent(this, RxJavaActivity.class));
+                break;
+            //RxJava + Retriofit 的封装
+            case R.id.RxJava2:
+
                 break;
             //由RecyclerView打造Gallery画廊
             case R.id.RecyclerViewGallery:
