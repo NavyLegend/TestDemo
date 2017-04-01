@@ -46,7 +46,7 @@
         <activity android:name=".customviewpager.CustomViewPager" />
         <activity android:name=".customviewpager.CustomHorizontalActivity" />
         <activity android:name=".customviewpager.CustomVerticalActivity" />
-        <activity android:name=".rxjava2.RxJavaActivity2" />
+        <activity android:name=".rxjava2.RxJava2Activity" />
     </application>
 
 </manifest>
