@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             //RxJava + Retriofit 的封装
             case R.id.RxJava2:
-
+                startActivity(new Intent(this, RxJava2Activity.class));
                 break;
             //由RecyclerView打造Gallery画廊
             case R.id.RecyclerViewGallery:
