@@ -13,6 +13,7 @@ import common.jlt.com.testdemo.greendao.GreenDaoActivity;
 import common.jlt.com.testdemo.okhttp.OkHttpActivity;
 import common.jlt.com.testdemo.recyclerviewgallery.RecyclerViewGallery;
 import common.jlt.com.testdemo.rxjava.RxJavaActivity;
+import common.jlt.com.testdemo.sqlite.SQLiteTestActivity;
 import common.jlt.com.testdemo.strategy.Strategy;
 import common.jlt.com.testdemo.viewpagergallery.MagicViewPager;
 import common.jlt.com.testdemo.viewpagergallery.ViewPagerGallery;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.viewpagerGallery2).setOnClickListener(this);
         findViewById(R.id.customeViewPager).setOnClickListener(this);
         findViewById(R.id.RxJava2).setOnClickListener(this);
+        findViewById(R.id.SQLiteDb).setOnClickListener(this);
 
         /**
          * 初始化极光推送
@@ -66,14 +68,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.greenDao:
                 startActivity(new Intent(this, GreenDaoActivity.class));
                 break;
+            //SQLiteDate存储数据
+            case R.id.SQLiteDb:
+                startActivity(new Intent(this, SQLiteTestActivity.class));
+                break;
             //RxJava + Retriofit + OkHttp 简单Demo
             case R.id.RxJava:
                 startActivity(new Intent(this, RxJavaActivity.class));
                 break;
-            //RxJava + Retriofit 的封装
-            case R.id.RxJava2:
-                startActivity(new Intent(this, RxJava2Activity.class));
-                break;
+//            //RxJava + Retriofit 的封装
+//            case R.id.RxJava2:
+//                startActivity(new Intent(this, RxJava2Activity.class));
+//                break;
             //由RecyclerView打造Gallery画廊
             case R.id.RecyclerViewGallery:
                 startActivity(new Intent(this, RecyclerViewGallery.class));

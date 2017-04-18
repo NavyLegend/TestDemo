@@ -44,6 +44,12 @@
             android:text="greenDao 3.0 Demo"
             />
         <Button
+            android:id="@+id/SQLiteDb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用SQLite存储数据"
+            />
+        <Button
             android:id="@+id/RxJava"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
