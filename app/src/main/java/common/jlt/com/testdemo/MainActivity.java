@@ -11,6 +11,7 @@ import common.jlt.com.testdemo.customviewpager.CustomViewPager;
 import common.jlt.com.testdemo.gradienttitlebar.GradientTitleBarActivity;
 import common.jlt.com.testdemo.greendao.GreenDaoActivity;
 import common.jlt.com.testdemo.okhttp.OkHttpActivity;
+import common.jlt.com.testdemo.pupowindow.PupoWindowTestActivity;
 import common.jlt.com.testdemo.recyclerviewgallery.RecyclerViewGallery;
 import common.jlt.com.testdemo.rxjava.RxJavaActivity;
 import common.jlt.com.testdemo.sqlite.SQLiteTestActivity;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.customeViewPager).setOnClickListener(this);
         findViewById(R.id.RxJava2).setOnClickListener(this);
         findViewById(R.id.SQLiteDb).setOnClickListener(this);
+        findViewById(R.id.pupoWindow).setOnClickListener(this);
 
         /**
          * 初始化极光推送
@@ -99,6 +101,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //自定义View来实现ViewPager效果
             case R.id.customeViewPager:
                 startActivity(new Intent(this, CustomViewPager.class));
+                break;
+            //PupoWindow的弹入及弹出
+            case R.id.pupoWindow:
+                startActivity(new Intent(this, PupoWindowTestActivity.class));
                 break;
             default:
                 break;
