@@ -6,11 +6,36 @@ package common.jlt.com.testdemo.pupowindow;
 
 public class Good {
     private String name;
-    private String price;
+    private double price;
+    private double single_price;
+    private int num;
 
-    public Good(String name, String price) {
+    public Good(String name, float price) {
         this.name = name;
         this.price = price;
+    }
+
+    public Good(String name, float price,float single_price, int num) {
+        this.single_price=single_price;
+        this.name = name;
+        this.price = price;
+        this.num = num;
+    }
+
+    public double getSingle_price() {
+        return single_price;
+    }
+
+    public void setSingle_price(double single_price) {
+        this.single_price = single_price;
+    }
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
     }
 
     public String getName() {
@@ -21,11 +46,11 @@ public class Good {
         this.name = name;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 }

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import common.jlt.com.testdemo.Constant;
 import common.jlt.com.testdemo.R;
@@ -19,14 +20,60 @@ import common.jlt.com.testdemo.R;
 public class CustomPopuwindow extends PopupWindow {
 
     SelParaListener selParaListener;
+    Good           good  ;
     private Context mContext;
     private View view;
     private TextView btn_cancel;
-    public CustomPopuwindow(Context mContext, final SelParaListener selParaListener) {
+    private TextView num_tv;
+    private int num;
+    private TextView sum_price;
+
+    public CustomPopuwindow(final Context mContext, final Good good , final SelParaListener selParaListener) {
         this.mContext=mContext;
         this.selParaListener=selParaListener;
+        this.good=good;
 
         this.view = LayoutInflater.from(mContext).inflate(R.layout.popu_view, null);
+        ((TextView) view.findViewById(R.id.name_tv)).setText(good.getName());
+        ((TextView) view.findViewById(R.id.price_tv)).setText(String.valueOf(good.getSingle_price()));
+        sum_price = ((TextView) view.findViewById(R.id.sum_price));
+        sum_price.setText(String.valueOf(good.getPrice()));
+        //减
+        view.findViewById(R.id.minus_tv).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (num>1){
+                    num=num-1;
+                    num_tv.setText(String.valueOf(num));
+                    good.setNum(num);
+                    good.setPrice(num*good.getPrice());
+                    sum_price.setText(String.valueOf(good.getPrice()));
+                }else {
+                    Toast.makeText(mContext, "最少一件", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+            }
+        });
+        //加
+        view.findViewById(R.id.plus_tv).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (num<10){
+                    num=num+1;
+                    num_tv.setText(String.valueOf(num));
+                    good.setNum(num);
+                    good.setPrice(num*good.getPrice());
+                    sum_price.setText(String.valueOf(good.getPrice()));
+                }else {
+                    Toast.makeText(mContext, "最多十件", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+            }
+        });
+        //数量
+        num_tv = ((TextView) view.findViewById(R.id.num_tv));
+        num_tv.setText(String.valueOf(good.getNum()));
 
         btn_cancel = (TextView) view.findViewById(R.id.btn_cancel);
         // 取消按钮
@@ -36,11 +83,10 @@ public class CustomPopuwindow extends PopupWindow {
                 // 销毁弹出框
                 dismiss();
                 if (selParaListener!=null){
-                    selParaListener.onResult(Constant.option,new Good("商品名" ,"998"));
+                    selParaListener.onResult(Constant.option,good);
                 }
             }
         });
-
 
         // 设置外部可点击
         this.setOutsideTouchable(true);

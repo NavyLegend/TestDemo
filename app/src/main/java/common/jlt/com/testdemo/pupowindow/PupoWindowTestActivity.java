@@ -13,6 +13,7 @@ import common.jlt.com.testdemo.R;
 
 public class PupoWindowTestActivity extends AppCompatActivity {
 
+    Good good=new Good("录音机",666,666,1);
     private WindowManager.LayoutParams params;
 
     @Override
@@ -21,12 +22,13 @@ public class PupoWindowTestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pupo_window_test);
     }
     public void showPopFormBottom(View view) {
-        CustomPopuwindow takePhotoPopWin = new CustomPopuwindow(this, new CustomPopuwindow.SelParaListener() {
+        CustomPopuwindow takePhotoPopWin = new CustomPopuwindow(this,good,new CustomPopuwindow.SelParaListener() {
             @Override
-            public void onResult(int option, Good good) {
+            public void onResult(int option, Good good_2) {
                 switch (option){
                     case Constant.option:
-                        Toast.makeText(PupoWindowTestActivity.this, good.getName()+good.getPrice(), Toast.LENGTH_SHORT).show();
+                        good=good_2;
+                        Toast.makeText(PupoWindowTestActivity.this,good.getName()+good.getPrice()+good.getNum(), Toast.LENGTH_SHORT).show();
                         break;
 
                 }
