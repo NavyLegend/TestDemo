@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="用广播来实时监听网络状态的变化"
+            android:textAllCaps="false"
             />
         <Button
             android:layout_width="match_parent"
@@ -36,66 +37,77 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="OkHttp"
+            android:textAllCaps="false"
             />
         <Button
             android:id="@+id/greenDao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="greenDao 3.0 Demo"
+            android:textAllCaps="false"
             />
         <Button
             android:id="@+id/SQLiteDb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="使用SQLite存储数据"
+            android:textAllCaps="false"
             />
         <Button
             android:id="@+id/RxJava"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RxJava+Retrofit+OkHttp的Demo及缓存设置"
+            android:textAllCaps="false"
             />
         <Button
             android:id="@+id/RxJava2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RxJava+Retrofit 的封装"
+            android:textAllCaps="false"
             />
         <Button
             android:id="@+id/RecyclerViewGallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="由RecyclerView打造Gallery画廊"
+            android:textAllCaps="false"
             />
         <Button
             android:id="@+id/gradientTitleBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="渐变的titleBar"
+            android:textAllCaps="false"
             />
         <Button
             android:id="@+id/viewpagerGallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="viewpagerGallery"
+            android:textAllCaps="false"
             />
         <Button
             android:id="@+id/viewpagerGallery2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="viewpagerGallery2"
+            android:textAllCaps="false"
             />
         <Button
             android:id="@+id/customeViewPager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="自定义view来实现ViewPager效果"
+            android:textAllCaps="false"
             />
-        <Button
+        <Butto
             android:id="@+id/pupoWindow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PupoWindow弹出弹入动画"
+            android:text="PopuWindow弹出弹入动画"
+            android:textAllCaps="false"
             />
 
     </LinearLayout>
