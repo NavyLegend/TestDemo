@@ -9,6 +9,7 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import common.jlt.com.testdemo.Constant;
 import common.jlt.com.testdemo.R;
 
 /**
@@ -17,14 +18,13 @@ import common.jlt.com.testdemo.R;
 
 public class CustomPopuwindow extends PopupWindow {
 
+    SelParaListener selParaListener;
     private Context mContext;
-
     private View view;
-
     private TextView btn_cancel;
-
-
-    public CustomPopuwindow(Context mContext) {
+    public CustomPopuwindow(Context mContext, final SelParaListener selParaListener) {
+        this.mContext=mContext;
+        this.selParaListener=selParaListener;
 
         this.view = LayoutInflater.from(mContext).inflate(R.layout.popu_view, null);
 
@@ -35,6 +35,9 @@ public class CustomPopuwindow extends PopupWindow {
             public void onClick(View v) {
                 // 销毁弹出框
                 dismiss();
+                if (selParaListener!=null){
+                    selParaListener.onResult(Constant.option,new Good("商品名" ,"998"));
+                }
             }
         });
 
@@ -77,5 +80,12 @@ public class CustomPopuwindow extends PopupWindow {
         // 设置弹出窗体显示时的动画，从底部向上弹出
         this.setAnimationStyle(R.style.pupo_window_anim);
 
+    }
+
+    /**
+     * 回调接口，把选择后的数据回传到宿主页面；
+     */
+    public interface SelParaListener{
+        public void onResult(int option,Good good);
     }
 }

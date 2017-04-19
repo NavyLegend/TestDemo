@@ -102,7 +102,7 @@
             android:text="自定义view来实现ViewPager效果"
             android:textAllCaps="false"
             />
-        <Butto
+        <Button
             android:id="@+id/pupoWindow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

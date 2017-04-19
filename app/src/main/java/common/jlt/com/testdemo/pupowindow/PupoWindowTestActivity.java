@@ -6,7 +6,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
+import android.widget.Toast;
 
+import common.jlt.com.testdemo.Constant;
 import common.jlt.com.testdemo.R;
 
 public class PupoWindowTestActivity extends AppCompatActivity {
@@ -19,7 +21,17 @@ public class PupoWindowTestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pupo_window_test);
     }
     public void showPopFormBottom(View view) {
-        CustomPopuwindow takePhotoPopWin = new CustomPopuwindow(this);
+        CustomPopuwindow takePhotoPopWin = new CustomPopuwindow(this, new CustomPopuwindow.SelParaListener() {
+            @Override
+            public void onResult(int option, Good good) {
+                switch (option){
+                    case Constant.option:
+                        Toast.makeText(PupoWindowTestActivity.this, good.getName()+good.getPrice(), Toast.LENGTH_SHORT).show();
+                        break;
+
+                }
+            }
+        });
 //        设置Popupwindow显示位置（从底部弹出）
         takePhotoPopWin.showAtLocation(findViewById(R.id.main_view), Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0);
         params = getWindow().getAttributes();
