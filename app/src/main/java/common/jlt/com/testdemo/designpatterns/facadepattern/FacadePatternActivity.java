@@ -14,7 +14,6 @@ private ZhangWuJi zhangWuJi;
         setContentView(R.layout.activity_facade_pattern);
         zhangWuJi=new ZhangWuJi(this);
 
-
     }
 
     public void onClick(View view) {
