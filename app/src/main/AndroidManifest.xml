@@ -48,7 +48,8 @@
         <activity android:name=".customviewpager.CustomVerticalActivity" />
         <activity android:name=".sqlite.SQLiteTestActivity" />
         <activity android:name=".pupowindow.PupoWindowTestActivity" />
-        <activity android:name=".designpatterns.DesignPatternsActivity"></activity>
+        <activity android:name=".designpatterns.DesignPatternsActivity" />
+        <activity android:name=".designpatterns.facadepattern.FacadePatternActivity"></activity>
     </application>
 
 </manifest>
