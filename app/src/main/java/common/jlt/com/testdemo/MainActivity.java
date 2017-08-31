@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.SQLiteDb).setOnClickListener(this);
         findViewById(R.id.pupoWindow).setOnClickListener(this);
 
+
         /**
          * 初始化极光推送
          */
