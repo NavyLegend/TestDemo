@@ -8,6 +8,7 @@ import android.view.View;
 import cn.jpush.android.api.JPushInterface;
 import common.jlt.com.testdemo.checknetstatus.CheckNetStatus;
 import common.jlt.com.testdemo.customviewpager.CustomViewPager;
+import common.jlt.com.testdemo.designpatterns.DesignPatternsActivity;
 import common.jlt.com.testdemo.gradienttitlebar.GradientTitleBarActivity;
 import common.jlt.com.testdemo.greendao.GreenDaoActivity;
 import common.jlt.com.testdemo.okhttp.OkHttpActivity;
@@ -15,7 +16,6 @@ import common.jlt.com.testdemo.pupowindow.PupoWindowTestActivity;
 import common.jlt.com.testdemo.recyclerviewgallery.RecyclerViewGallery;
 import common.jlt.com.testdemo.rxjava.RxJavaActivity;
 import common.jlt.com.testdemo.sqlite.SQLiteTestActivity;
-import common.jlt.com.testdemo.strategy.Strategy;
 import common.jlt.com.testdemo.viewpagergallery.MagicViewPager;
 import common.jlt.com.testdemo.viewpagergallery.ViewPagerGallery;
 
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.check_net_status).setOnClickListener(this);
-        findViewById(R.id.strategy).setOnClickListener(this);
+        findViewById(R.id.designPatterns).setOnClickListener(this);
         findViewById(R.id.okhttp).setOnClickListener(this);
         findViewById(R.id.greenDao).setOnClickListener(this);
         findViewById(R.id.RxJava).setOnClickListener(this);
@@ -59,9 +59,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.check_net_status:
                 startActivity(new Intent(this, CheckNetStatus.class));
                 break;
-            //设计模式：策略模式
-            case R.id.strategy:
-                startActivity(new Intent(this, Strategy.class));
+            //设计模式
+            case R.id.designPatterns:
+                startActivity(new Intent(this, DesignPatternsActivity.class));
                 break;
               //OKHttp
             case R.id.okhttp:

@@ -27,10 +27,10 @@
             android:text="推送测试"
             />
         <Button
-            android:id="@+id/strategy"
+            android:id="@+id/designPatterns"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="策略模式"
+            android:text="设计模式"
             />
         <Button
             android:id="@+id/okhttp"
