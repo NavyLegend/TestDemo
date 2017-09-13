@@ -27,9 +27,6 @@ public class DesignPatternsActivity extends AppCompatActivity {
             case R.id.facadePattern:
                 startActivity(new Intent(this,FacadePatternActivity.class));
                 break;
-
-
-
         }
     }
 }
