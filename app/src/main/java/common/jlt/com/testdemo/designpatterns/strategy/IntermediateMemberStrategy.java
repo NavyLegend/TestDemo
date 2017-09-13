@@ -1,4 +1,4 @@
-package common.jlt.com.testdemo.strategy;
+package common.jlt.com.testdemo.designpatterns.strategy;
 
 /**
  * 中级会员折扣类

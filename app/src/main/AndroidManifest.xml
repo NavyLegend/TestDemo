@@ -35,7 +35,7 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".strategy.Strategy" />
+        <activity android:name=".designpatterns.strategy.Strategy" />
         <activity android:name=".okhttp.OkHttpActivity" />
         <activity android:name=".greendao.GreenDaoActivity" />
         <activity android:name=".rxjava.RxJavaActivity" />
@@ -49,7 +49,8 @@
         <activity android:name=".sqlite.SQLiteTestActivity" />
         <activity android:name=".pupowindow.PupoWindowTestActivity" />
         <activity android:name=".designpatterns.DesignPatternsActivity" />
-        <activity android:name=".designpatterns.facadepattern.FacadePatternActivity"></activity>
+        <activity android:name=".designpatterns.facadepattern.FacadePatternActivity" />
+        <activity android:name=".designpatterns.observerpattern.Client"></activity>
     </application>
 
 </manifest>

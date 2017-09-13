@@ -1,4 +1,4 @@
-package common.jlt.com.testdemo.strategy;
+package common.jlt.com.testdemo.designpatterns.strategy;
 
 /**
  * 价格类

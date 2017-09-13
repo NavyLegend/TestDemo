@@ -1,4 +1,4 @@
-package common.jlt.com.testdemo.strategy;
+package common.jlt.com.testdemo.designpatterns.strategy;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -7,7 +7,8 @@ import android.view.View;
 
 import common.jlt.com.testdemo.R;
 import common.jlt.com.testdemo.designpatterns.facadepattern.FacadePatternActivity;
-import common.jlt.com.testdemo.strategy.Strategy;
+import common.jlt.com.testdemo.designpatterns.observerpattern.Client;
+import common.jlt.com.testdemo.designpatterns.strategy.Strategy;
 
 public class DesignPatternsActivity extends AppCompatActivity {
 
@@ -26,6 +27,10 @@ public class DesignPatternsActivity extends AppCompatActivity {
             //外观模式
             case R.id.facadePattern:
                 startActivity(new Intent(this,FacadePatternActivity.class));
+                break;
+            //观察者模式
+            case R.id.observerPattern:
+                startActivity(new Intent(this,Client.class));
                 break;
         }
     }
