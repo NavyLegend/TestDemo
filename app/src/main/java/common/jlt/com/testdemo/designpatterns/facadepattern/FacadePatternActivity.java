@@ -6,6 +6,9 @@ import android.view.View;
 
 import common.jlt.com.testdemo.R;
 
+/**
+ * 外观模式
+ */
 public class FacadePatternActivity extends AppCompatActivity {
 private ZhangWuJi zhangWuJi;
     @Override
