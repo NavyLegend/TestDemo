@@ -113,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.textMixedPic:
                 startActivity(new Intent(this,TextMixedPicActivity.class));
                 break;
+
             default:
                 break;
 
