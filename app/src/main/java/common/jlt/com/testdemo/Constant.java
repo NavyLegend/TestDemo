@@ -5,5 +5,7 @@ package common.jlt.com.testdemo;
  */
 
 public interface Constant {
+
     int option=1;
+
 }
