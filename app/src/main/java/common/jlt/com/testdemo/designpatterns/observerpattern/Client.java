@@ -24,9 +24,7 @@ private  ConcreteSubject concreteSubject;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client);
         concreteSubject=new ConcreteSubject();
-
     }
-
     public void onClick(View view) {
         switch (view.getId()){
             //增加订阅者
@@ -42,7 +40,6 @@ private  ConcreteSubject concreteSubject;
                                 WeixinUser user=new WeixinUser(Client.this);
                                 user.setName(editText.getText().toString());
                                 concreteSubject.attach(user);
-
                             }
                         }).create().show();
                 break;
@@ -59,7 +56,6 @@ private  ConcreteSubject concreteSubject;
                                 WeixinUser user=new WeixinUser(Client.this);
                                 user.setName(editText2.getText().toString());
                                 concreteSubject.detach(user);
-
                             }
                         }).create().show();
 
@@ -75,7 +71,6 @@ private  ConcreteSubject concreteSubject;
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 //更新消息
                                 concreteSubject.notify(editText3.getText().toString());
-
                             }
                         }).create().show();
 

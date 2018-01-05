@@ -50,7 +50,8 @@
         <activity android:name=".pupowindow.PupoWindowTestActivity" />
         <activity android:name=".designpatterns.DesignPatternsActivity" />
         <activity android:name=".designpatterns.facadepattern.FacadePatternActivity" />
-        <activity android:name=".designpatterns.observerpattern.Client"></activity>
+        <activity android:name=".designpatterns.observerpattern.Client" />
+        <activity android:name=".textmixedpic.TextMixedPicActivity"></activity>
     </application>
 
 </manifest>

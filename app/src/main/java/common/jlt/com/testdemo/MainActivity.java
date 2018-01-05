@@ -16,6 +16,7 @@ import common.jlt.com.testdemo.pupowindow.PupoWindowTestActivity;
 import common.jlt.com.testdemo.recyclerviewgallery.RecyclerViewGallery;
 import common.jlt.com.testdemo.rxjava.RxJavaActivity;
 import common.jlt.com.testdemo.sqlite.SQLiteTestActivity;
+import common.jlt.com.testdemo.textmixedpic.TextMixedPicActivity;
 import common.jlt.com.testdemo.viewpagergallery.MagicViewPager;
 import common.jlt.com.testdemo.viewpagergallery.ViewPagerGallery;
 
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.RxJava2).setOnClickListener(this);
         findViewById(R.id.SQLiteDb).setOnClickListener(this);
         findViewById(R.id.pupoWindow).setOnClickListener(this);
+        findViewById(R.id.textMixedPic).setOnClickListener(this);
 
 
         /**
@@ -106,6 +108,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //PupoWindow的弹入及弹出
             case R.id.pupoWindow:
                 startActivity(new Intent(this, PupoWindowTestActivity.class));
+                break;
+            //图文混排
+            case R.id.textMixedPic:
+                startActivity(new Intent(this,TextMixedPicActivity.class));
                 break;
             default:
                 break;
