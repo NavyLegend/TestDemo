@@ -13,6 +13,7 @@ import common.jlt.com.testdemo.gradienttitlebar.GradientTitleBarActivity;
 import common.jlt.com.testdemo.greendao.GreenDaoActivity;
 import common.jlt.com.testdemo.okhttp.OkHttpActivity;
 import common.jlt.com.testdemo.pupowindow.PupoWindowTestActivity;
+import common.jlt.com.testdemo.recyclerview.HorizontalRecyclerViewActivity;
 import common.jlt.com.testdemo.recyclerviewgallery.RecyclerViewGallery;
 import common.jlt.com.testdemo.rxjava.RxJavaActivity;
 import common.jlt.com.testdemo.sqlite.SQLiteTestActivity;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.SQLiteDb).setOnClickListener(this);
         findViewById(R.id.pupoWindow).setOnClickListener(this);
         findViewById(R.id.textMixedPic).setOnClickListener(this);
+        findViewById(R.id.recyclerView).setOnClickListener(this);
 
 
         /**
@@ -113,6 +115,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.textMixedPic:
                 startActivity(new Intent(this,TextMixedPicActivity.class));
                 break;
+            //横向recyclerView
+            case R.id.recyclerView:
+                startActivity(new Intent(this, HorizontalRecyclerViewActivity.class));
+                break;
+
             default:
                 break;
 

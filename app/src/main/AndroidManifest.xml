@@ -51,7 +51,8 @@
         <activity android:name=".designpatterns.DesignPatternsActivity" />
         <activity android:name=".designpatterns.facadepattern.FacadePatternActivity" />
         <activity android:name=".designpatterns.observerpattern.Client" />
-        <activity android:name=".textmixedpic.TextMixedPicActivity"></activity>
+        <activity android:name=".textmixedpic.TextMixedPicActivity" />
+        <activity android:name=".recyclerview.HorizontalRecyclerViewActivity"></activity>
     </application>
 
 </manifest>

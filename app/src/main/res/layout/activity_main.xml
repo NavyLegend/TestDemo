@@ -116,6 +116,13 @@
             android:text="图文混排"
             android:textAllCaps="false"
             />
+        <Button
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RecyclerView"
+            android:textAllCaps="false"
+            />
 
     </LinearLayout>
 
