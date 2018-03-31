@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import cn.jpush.android.api.JPushInterface;
+import common.jlt.com.testdemo.acceleteball.StartAcceleteBallActivity;
 import common.jlt.com.testdemo.checknetstatus.CheckNetStatus;
 import common.jlt.com.testdemo.customviewpager.CustomViewPager;
 import common.jlt.com.testdemo.designpatterns.DesignPatternsActivity;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.pupoWindow).setOnClickListener(this);
         findViewById(R.id.textMixedPic).setOnClickListener(this);
         findViewById(R.id.recyclerView).setOnClickListener(this);
+        findViewById(R.id.acceleteBall).setOnClickListener(this);
 
 
         /**
@@ -118,6 +120,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //横向recyclerView
             case R.id.recyclerView:
                 startActivity(new Intent(this, HorizontalRecyclerViewActivity.class));
+                break;
+            //360加速球
+            case R.id.acceleteBall:
+               startActivity(new Intent(this, StartAcceleteBallActivity.class));
                 break;
 
             default:

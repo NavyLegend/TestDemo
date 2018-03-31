@@ -52,7 +52,13 @@
         <activity android:name=".designpatterns.facadepattern.FacadePatternActivity" />
         <activity android:name=".designpatterns.observerpattern.Client" />
         <activity android:name=".textmixedpic.TextMixedPicActivity" />
-        <activity android:name=".recyclerview.HorizontalRecyclerViewActivity"></activity>
+        <activity android:name=".recyclerview.HorizontalRecyclerViewActivity" />
+        <activity android:name=".acceleteball.StartAcceleteBallActivity" />
+
+        <service
+            android:name=".acceleteball.service.StartFloatBallService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
